@@ -1,0 +1,27 @@
+#main {
+  .custom-bg {
+    background-image: url("/assets/images/small.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-size: cover;
+    @media screen and (max-width: 768px) {
+      background-image: url("/assets/images/mobile-home.png");
+    }
+  }
+  .h-120 {
+    width: 120px;
+    height: 120px;
+  }
+  .custom-text-color {
+    color: rgba(4, 80, 114, 1);
+  }
+  .custom-bg-color {
+    background-color: rgba(4, 80, 114, 1);
+  }
+
+  .text-color-me {
+    width: 350px;
+    color: rgba(4, 80, 114, 1);
+  }
+}

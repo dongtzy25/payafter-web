@@ -1,0 +1,218 @@
+<nav
+  class="
+    absolute
+    flex flex-wrap
+    items-center
+    justify-between
+    bg-transparent
+    mb-3
+    w-full
+    z-10
+  "
+>
+  <div
+    class="
+      container
+      p-4
+      mx-auto
+      flex flex-wrap
+      items-center
+      justify-between
+      h-28
+    "
+  >
+    <div
+      class="
+        relative
+        flex
+        justify-between
+        lg:w-auto lg:static lg:block lg:justify-start
+      "
+    >
+      <a
+        class="
+          text-sm
+          font-bold
+          leading-relaxed
+          inline-block
+          mr-4
+          py-2
+          whitespace-nowrap
+          uppercase
+          text-balck
+        "
+        href="/main/dashboard"
+      >
+        <img src="assets/images/Logo1.svg" alt="logo" class="h-120" />
+      </a>
+    </div>
+    <div class="flex flex-grow items-center lg:pr-12">
+      <ul class="lg:flex flex-col lg:flex-row list-none ml-auto hidden">
+        <li class="nav-item" *ngFor="let item of menu">
+          <a
+            class="
+              px-3
+              flex
+              items-center
+              text-m
+              font-normal
+              leading-snug
+              text-color-me
+              hover:opacity-75
+            "
+            [href]="item.url"
+          >
+            <span class="py-2" [ngClass]="{ active: item.active }">{{
+              item.name
+            }}</span>
+          </a>
+        </li>
+      </ul>
+      <button
+        class="
+          px-4
+          py-1
+          ml-2
+          bg-red-500
+          text-white
+          rounded-full
+          hover:opacity-75
+          hidden
+          lg:block
+        "
+      >
+        Join Now
+      </button>
+      <div class="mr-2 flex flex-grow justify-end lg:hidden">
+        <button
+          (click)="toggleHamburger()"
+          class="
+            inline-flex
+            items-center
+            justify-center
+            p-2
+            rounded-md
+            text-gray-400
+          "
+        >
+          <svg
+            class="h-12 w-12"
+            stroke="currentColor"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              [ngClass]="{
+                hidden: hamburgerOpen,
+                'inline-flex': !hamburgerOpen
+              }"
+              class="inline-flex"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+            <path
+              [ngClass]="{
+                hidden: !hamburgerOpen,
+                'inline-flex': hamburgerOpen
+              }"
+              class="hidden"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+<div id="menu" class="w-full h-full" [@slideInOut]="isOpen">
+  <div class="flex items-start justify-between">
+    <div
+      class="
+        relative
+        flex
+        justify-between
+        lg:w-auto lg:static lg:block lg:justify-start
+      "
+    >
+      <a
+        class="
+          text-sm
+          font-bold
+          leading-relaxed
+          inline-block
+          mr-4
+          py-2
+          whitespace-nowrap
+          uppercase
+          text-balck
+        "
+        href="/main/dashboard"
+      >
+        <img src="assets/images/Logo1.svg" alt="logo" class="h-120" />
+      </a>
+    </div>
+    <button
+      (click)="toggleHamburger()"
+      class="
+        inline-flex
+        items-center
+        justify-center
+        p-2
+        rounded-md
+        text-gray-400
+      "
+    >
+      <svg
+        class="h-8 w-8"
+        stroke="currentColor"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <path
+          class="inline-flex"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
+  </div>
+
+  <br />
+  <div class="px-4">
+    <ul class="flex flex-col lg:flex-row list-none ml-auto">
+      <li class="nav-item" *ngFor="let item of menu">
+        <a
+          class="
+            px-3
+            flex
+            items-center
+            text-m
+            font-normal
+            leading-snug
+            text-color-me
+            hover:opacity-75
+          "
+          [href]="item.url"
+        >
+          <span
+            class="py-2 font-mont custom-text-color"
+            [ngClass]="{ active: item.active }"
+            >{{ item.name }}</span
+          >
+        </a>
+      </li>
+    </ul>
+    <button
+      class="px-4 py-1 ml-2 bg-red-500 text-white rounded-full hover:opacity-75"
+    >
+      Join Now
+    </button>
+  </div>
+</div>

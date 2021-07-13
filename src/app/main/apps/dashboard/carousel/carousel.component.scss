@@ -1,0 +1,25 @@
+.glide {
+  .glide__slides {
+    height: 300px;
+    @media screen and (max-width: 768px) {
+      height: 250px;
+    }
+  }
+  .glide__bullets {
+    bottom: -2em !important;
+  }
+
+  .custom-arrow-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -2.5em !important;
+  }
+
+  .custom-arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -2.5em !important;
+  }
+}

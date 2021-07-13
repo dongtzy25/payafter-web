@@ -1,0 +1,28 @@
+require('dotenv').config();
+const enablePurge = process.env.ENABLE_PURGE || false;
+module.exports = {
+    module: {
+        purge: {
+            enabled: enablePurge,
+            content: [
+                './src/**/*.html',
+                './src/**/*.scss'
+            ]
+        },
+        rules: [
+            {
+                test: /\.scss$/,
+                loader: 'postcss-loader',
+                options: {
+                    ident: 'postcss',
+                    syntax: 'postcss-scss',
+                    plugins: () => [
+                        require('postcss-import'),
+                        require('tailwindcss'),
+                        require('autoprefixer'),
+                    ]
+                }
+            }
+        ]
+    }
+};
