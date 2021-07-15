@@ -1,79 +1,32 @@
 <div class="container mx-auto">
-  <div class="text-4xl mb-12">When you can shop</div>
-  <ngx-glide
-    [startAt]="0"
-    [perView]="4"
-    [animationDuration]="3000"
-    type="carousel"
-    [bound]="true"
-    [swipeThreshold]="false"
-    [dragThreshold]="false"
-    [arrowLeftTemplate]="arrowLeftTemplate"
-    [arrowRightTemplate]="arrowRightTemplate"
-    [breakpoints]="{
-      '640': { perView: 1 },
-      '768': { perView: 2 },
-      '1080': { perView: 3 }
-    }"
-    [autoplay]="true"
-  >
-    <div *ngFor="let item of slides">
-      <img [src]="item.src" alt="" class="w-full h-full" />
+  <div class="text-4xl mb-12">
+    Why Choose Pay<span class="after-color">After</span>?
+  </div>
+  <div class="flex items-center justify-around">
+    <div class="flex items-center justify-center flex-col w-80">
+      <img src="assets/images/switftsimple.png" alt="" class="w-full h-full" />
+      <br />
+      <h1 class="text-4xl">Swift and Simple</h1>
+      <br />
+      <p class="text-lg">
+        Employee are pre-approved which makes approval fast and effortless.
+      </p>
     </div>
-    <ng-template #arrowLeftTemplate>
-      <div class="custom-arrow custom-arrow-left">
-        <button mat-raised-button color="accent" data-glide-dir="prev">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            fill="currentColor"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              stroke-width="2"
-              stroke="#fff"
-              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-            />
-          </svg>
-        </button>
-      </div>
-    </ng-template>
-    <ng-template #arrowRightTemplate>
-      <div class="custom-arrow custom-arrow-right" data-glide-dir="next">
-        <button mat-raised-button color="accent">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            fill="currentColor"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              stroke-width="2"
-              stroke="#fff"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-            />
-          </svg>
-        </button>
-      </div>
-    </ng-template>
-  </ngx-glide>
-
-  <button
-    class="
-      px-4
-      py-1
-      ml-2
-      bg-red-500
-      text-white
-      rounded-full
-      hover:opacity-75
-      mt-12
-    "
-  >
-    See all
-  </button>
+    <div class="flex items-center justify-center flex-col w-80">
+      <img src="assets/images/competitive.png" alt="" class="w-full h-full" />
+      <br />
+      <h1 class="text-4xl">Competitive Interest Rates</h1>
+      <br />
+      <p class="text-lg">Enjoy 0% interest for 5 monthly installments.</p>
+    </div>
+    <div class="flex items-center justify-center flex-col w-80">
+      <img src="assets/images/timely.png" alt="" class="w-full h-full" />
+      <br />
+      <h1 class="text-4xl">Timely</h1>
+      <br />
+      <p class="text-lg">
+        Get access to our installment services in an instant
+      </p>
+    </div>
+  </div>
 </div>

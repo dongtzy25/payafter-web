@@ -7,6 +7,12 @@ import { WorksSectionComponent } from './dashboard/works-section/works-section.c
 import { FourthSectionComponent } from './dashboard/fourth-section/fourth-section.component';
 import { CardSectionComponent } from './dashboard/card-section/card-section.component';
 import { NgxGlideModule } from 'ngx-glide';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NavigationComponent } from './layouts/navigation/navigation.component';
+import { FooterComponent } from './layouts/footer/footer.component';
+
+
+
 
 const routes: Routes = [
   {
@@ -20,10 +26,20 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  declarations: [ DashboardComponent, CarouselComponent, WorksSectionComponent, FourthSectionComponent, CardSectionComponent ],
+  declarations: [ 
+    DashboardComponent, 
+    CarouselComponent, 
+    WorksSectionComponent, 
+    FourthSectionComponent, 
+    CardSectionComponent,
+    NavigationComponent,
+    FooterComponent
+   ],
   imports: [
     CommonModule,
     NgxGlideModule,
+    FormsModule,
+    ReactiveFormsModule, 
     RouterModule.forChild(routes)
   ],
   exports: []

@@ -1,6 +1,6 @@
 nav {
   .text-color-me {
-    color: rgba(4, 80, 114, 1);
+    color: rgb(0, 38, 62);
   }
   .nav-item {
     .active {
@@ -13,6 +13,7 @@ nav {
         background-color: rgba(4, 80, 114, 0.5);
         height: 2px;
       }
+      opacity: 0.75;
       position: relative;
       font-weight: bold;
     }

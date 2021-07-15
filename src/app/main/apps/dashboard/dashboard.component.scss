@@ -1,6 +1,6 @@
 #main {
   .custom-bg {
-    background-image: url("/assets/images/small.jpg");
+    background-image: url("/assets/images/small-1.png");
     background-position: center center;
     background-repeat: no-repeat;
     // background-attachment: fixed;
@@ -13,15 +13,8 @@
     width: 120px;
     height: 120px;
   }
-  .custom-text-color {
-    color: rgba(4, 80, 114, 1);
-  }
-  .custom-bg-color {
-    background-color: rgba(4, 80, 114, 1);
-  }
 
   .text-color-me {
-    width: 350px;
-    color: rgba(4, 80, 114, 1);
+    width: 380px;
   }
 }

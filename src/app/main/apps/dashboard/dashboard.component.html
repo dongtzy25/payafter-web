@@ -1,3 +1,4 @@
+<app-navigation></app-navigation>
 <main id="main">
   <section
     class="
@@ -15,22 +16,25 @@
     <div
       class="lg:flex lg:items-center lg:justify-center text-center lg:text-left"
     >
-      <img
-        src="assets/images/Logo1.svg"
-        alt="logo"
-        class="lg:h-full lg:w-full mx-auto mb-12"
-      />
-      <div class="w-16"></div>
-      <div class="ml-8">
+      <div [@LogoTrigger]>
+        <img
+          src="assets/images/Logo1.svg"
+          alt="logo"
+          class="lg:w-full mx-auto mb-12"
+          style="height: 200px; width: 200px"
+        />
+      </div>
+
+      <div class="ml-8" [@LogoTrigger]>
         <div class="custom-text-color lg:text-6xl text-4xl font-title">
-          Buy Now.
+          Shop Now.
         </div>
-        <div class="text-red-500 lg:text-6xl text-4xl">Pay Later.</div>
+        <div class="text-red-500 lg:text-6xl text-4xl">Pay After.</div>
         <br />
 
-        <div class="text-color-me font-mont">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-          magni expedita quam perferendis.
+        <div class="text-color-me font-mont font-bold custom-text-color">
+          Why wait when you can get what you want now and pay for it later with
+          PayAfter.
         </div>
         <br />
         <div class="flex lg:justify-end justify-center">
@@ -49,18 +53,23 @@
           </button>
         </div>
       </div>
+      <div class="ml-32" [@InterestTrigger]>
+        <img
+          src="assets/images/0-interest.png"
+          alt="logo"
+          class="mx-auto mb-12"
+        />
+      </div>
     </div>
   </section>
   <section class="p-16 custom-bg-color text-white text-center">
     <app-carousel></app-carousel>
   </section>
-  <section class="p-16 custom-bg-color text-white text-center">
+  <section class="p-16 custom-gray-color text-white text-center">
     <app-works-section></app-works-section>
   </section>
-  <section class="custom-bg-color text-white text-center">
-    <app-fourth-section></app-fourth-section>
-  </section>
-  <section class="p-16 custom-text-color text-center">
+  <section class="p-16 custom-bg-color text-center">
     <app-card-section></app-card-section>
   </section>
 </main>
+<app-footer></app-footer>

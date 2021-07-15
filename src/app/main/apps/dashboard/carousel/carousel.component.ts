@@ -10,30 +10,7 @@ import { NgxGlideComponent } from 'ngx-glide';
 })
 export class CarouselComponent implements OnInit {
 
-  slides = [
-    {
-      src: 'https://homepages.cae.wisc.edu/~ece533/images/airplane.png'
-    },
-    {
-      src: 'https://homepages.cae.wisc.edu/~ece533/images/airplane.png'
-    },
-    {
-      src: 'https://homepages.cae.wisc.edu/~ece533/images/airplane.png'
-    },
-    {
-      src: 'https://homepages.cae.wisc.edu/~ece533/images/airplane.png'
-    },
-    {
-      src: 'https://homepages.cae.wisc.edu/~ece533/images/airplane.png'
-    },
-    {
-      src: 'https://homepages.cae.wisc.edu/~ece533/images/airplane.png'
-    },
-    {
-      src: 'https://homepages.cae.wisc.edu/~ece533/images/airplane.png'
-    },
-   
-  ];
+ 
 
 
 

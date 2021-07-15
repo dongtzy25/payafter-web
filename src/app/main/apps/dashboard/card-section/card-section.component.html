@@ -1,4 +1,4 @@
-<div class="text-4xl">Shop worry-free with PayAfter!</div>
+<!-- <div class="text-4xl">Shop worry-free with PayAfter!</div>
 <div class="text-4xl">Transaction is easy and hassle-free!</div>
 <div
   class="
@@ -172,6 +172,139 @@
       "
     >
       <img src="assets/images/Safe-Icon.png" alt="" />
+    </div>
+  </div>
+</div> -->
+
+<div class="flex items-center justify-between container mx-auto flex-row">
+  <div class="text-white text-center w-2/4">
+    <h1 class="text-6xl">Join</h1>
+    <br />
+    <img
+      src="assets/images/PayAfter.svg"
+      alt=""
+      style="width: 200px"
+      class="mx-auto"
+    />
+    <br />
+    <h1 class="text-6xl">Now!</h1>
+    <br /><br />
+    <p class="text-2xl w-6/12 text-center mx-auto">
+      Buy what you need quickly and carry on with your carefree shopping.
+    </p>
+  </div>
+  <div class="w-2/4 text-left">
+    <div class="custom-gray-color p-8 px-12 w-9/12 rounded-lg">
+      <h1 class="text-2xl custom-text-color">Be our partner merchant!</h1>
+      <p class="text-base custom-text-color">
+        Join now and gain access to our Cebuana Lhuillier customer base.
+      </p>
+      <br />
+      <form class="text-center" [formGroup]="merchantForm">
+        <div class="form-group">
+          <label for="fullname"
+            >Fullname <span class="after-color">*</span></label
+          >
+          <input
+            type="text"
+            class="form-control custom-text-color"
+            id="fullname"
+            formControlName="fullname"
+            placeholder="First Name / Last Name / Middle Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email <span class="after-color">*</span></label>
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="youremail@email.com"
+            formControlName="email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber"
+            >Mobile Number <span class="after-color">*</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="phoneNumber"
+            formControlName="phoneNumber"
+            placeholder="+63 9921273990"
+          />
+        </div>
+        <div class="form-group">
+          <label for="company"
+            >Company <span class="after-color">*</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="company"
+            formControlName="company"
+            placeholder="Your Company"
+          />
+        </div>
+        <div class="form-group">
+          <label for="role">Role <span class="after-color">*</span></label>
+          <input
+            type="text"
+            class="form-control"
+            id="role"
+            formControlName="role"
+            placeholder="Owner / CEO"
+          />
+        </div>
+        <div class="form-group">
+          <label for="website"
+            >Website <span class="after-color">*</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="website"
+            formControlName="website"
+            placeholder="yoursite.com"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="alterEgo"
+            >Industry <span class="after-color">*</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="industry"
+            formControlName="industry"
+            required
+          />
+        </div>
+        <div class="form-group custom-text-color font-normal">
+          <input
+            id="userConsent"
+            required
+            type="checkbox"
+            formControlName="check"
+          />
+          I have read and agree PayAfter
+          <span class="underline font-bold">Terms and Condition</span>
+          and
+          <span class="underline font-bold">Privacy</span> policies.
+        </div>
+        <button
+          type="submit"
+          class="btn btn-success"
+          [ngClass]="{ 'btn-disabled': merchantForm.invalid }"
+          [disabled]="merchantForm.invalid"
+        >
+          Submit
+        </button>
+      </form>
     </div>
   </div>
 </div>

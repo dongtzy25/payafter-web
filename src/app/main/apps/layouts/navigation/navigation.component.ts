@@ -28,22 +28,27 @@ export class NavigationComponent implements OnInit {
       active: true,
     },
     {
-      name:'Merchants',
+      name:'About Us',
       url: '/main/merchants',
       active: false,
     },
     {
-      name:'FAQs',
+      name:'Why Choose PayAfter?',
       url: '/main//faqs',
       active: false,
     },
     {
-      name:'Repayment',
+      name:'How it Works',
       url: '/main//repayment',
       active: false,
     },
     {
-      name:'Contacts',
+      name:'Merchants',
+      url: '/main/contacts',
+      active: false,
+    },
+    {
+      name:'Contact Us',
       url: '/main/contacts',
       active: false,
     }
