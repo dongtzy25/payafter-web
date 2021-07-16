@@ -16,7 +16,7 @@
     <div
       class="lg:flex lg:items-center lg:justify-center text-center lg:text-left"
     >
-      <div [@LogoTrigger]>
+      <div class="lg:block hidden" [@LogoTrigger]>
         <img
           src="assets/images/Logo1.svg"
           alt="logo"
@@ -25,19 +25,28 @@
         />
       </div>
 
-      <div class="ml-8" [@LogoTrigger]>
+      <div class="lg:ml-8 lg:mt-0 mt-16" [@LogoTrigger]>
         <div class="custom-text-color lg:text-6xl text-4xl font-title">
           Shop Now.
         </div>
         <div class="text-red-500 lg:text-6xl text-4xl">Pay After.</div>
         <br />
 
-        <div class="text-color-me font-mont font-bold custom-text-color">
+        <div
+          class="
+            text-color-me
+            font-mont font-bold
+            custom-text-color
+            md:mx-auto
+            text-sm
+            lg:text-base
+          "
+        >
           Why wait when you can get what you want now and pay for it later with
           PayAfter.
         </div>
         <br />
-        <div class="flex lg:justify-end justify-center">
+        <div class="flex lg:justify-end justify-center lg:flex hidden">
           <button
             class="
               px-4
@@ -49,26 +58,41 @@
               hover:opacity-75
             "
           >
-            Join Now
+            Apply as Merchant
           </button>
         </div>
       </div>
-      <div class="ml-32" [@InterestTrigger]>
+      <div class="lg:ml-20" [@InterestTrigger]>
         <img
           src="assets/images/0-interest.png"
           alt="logo"
-          class="mx-auto mb-12"
+          class="mx-auto mb-12 lg:w-full w-10/12"
         />
+      </div>
+      <div class="flex lg:justify-end justify-center md:block lg:hidden block">
+        <button
+          class="
+            px-4
+            py-1
+            ml-2
+            bg-red-500
+            text-white
+            rounded-full
+            hover:opacity-75
+          "
+        >
+          Apply as Merchant
+        </button>
       </div>
     </div>
   </section>
-  <section class="p-16 custom-bg-color text-white text-center">
+  <section class="lg:p-16 custom-bg-color text-white text-center p-8">
     <app-carousel></app-carousel>
   </section>
-  <section class="p-16 custom-gray-color text-white text-center">
+  <section class="lg:p-16 custom-gray-color text-white text-center p-8">
     <app-works-section></app-works-section>
   </section>
-  <section class="p-16 custom-bg-color text-center">
+  <section class="lg:p-16 custom-bg-color text-center p-8">
     <app-card-section></app-card-section>
   </section>
 </main>

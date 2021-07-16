@@ -1,16 +1,15 @@
-<div class="container mx-auto">
-  <div class="text-4xl mb-12 custom-text-color">What they say about us</div>
+<div class="container mx-auto" id="new-carousel">
+  <div class="text-4xl lg:mb-12 custom-text-color">What they say about us</div>
   <br />
   <ngx-glide
     [startAt]="0"
     [perView]="3"
-    type="carousel"
+    type="slider"
     [showArrows]="false"
     [showBullets]="false"
     [breakpoints]="{
       '640': { perView: 1 },
-      '768': { perView: 2 },
-      '1080': { perView: 3 }
+      '1080': { perView: 2 }
     }"
   >
     <div *ngFor="let item of slides">
@@ -18,7 +17,7 @@
         <img
           src="assets/images/quote-icon.svg"
           alt="logo"
-          class="lg:h-12 lg:w-12 mr-auto"
+          class="h-12 w-12 mr-auto"
         />
         <p class="whitespace-pre-line">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat hic

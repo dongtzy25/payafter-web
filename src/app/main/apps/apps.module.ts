@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CarouselComponent } from './dashboard/carousel/carousel.component';
 import { WorksSectionComponent } from './dashboard/works-section/works-section.component';
-import { FourthSectionComponent } from './dashboard/fourth-section/fourth-section.component';
 import { CardSectionComponent } from './dashboard/card-section/card-section.component';
 import { NgxGlideModule } from 'ngx-glide';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -30,7 +29,6 @@ const routes: Routes = [
     DashboardComponent, 
     CarouselComponent, 
     WorksSectionComponent, 
-    FourthSectionComponent, 
     CardSectionComponent,
     NavigationComponent,
     FooterComponent
