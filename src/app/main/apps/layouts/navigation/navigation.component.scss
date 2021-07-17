@@ -1,6 +1,21 @@
 nav {
+  .container {
+    @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+      max-width: 1280px;
+    }
+
+    @media (min-width: 1536px) {
+      max-width: 1536px;
+    }
+  }
   .text-color-me {
     color: rgb(0, 38, 62);
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1038px) {
+    ul li a {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
   }
   .nav-item {
     .active {
@@ -22,6 +37,10 @@ nav {
   .h-120 {
     width: 120px;
     height: 120px;
+    @media only screen and (min-width: 1024px) {
+      width: 100px;
+      height: 100px;
+    }
   }
 }
 #menu {
